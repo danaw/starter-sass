@@ -1,4 +1,4 @@
-Gregs-Genesis-HTML5-Starter-Child
+Genesis HTML5 Starter Theme with Sass
 =================================
 
 Author: <a href="http://www.gregreindel.com">Dana Werpny</a>
