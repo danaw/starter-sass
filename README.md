@@ -1,19 +1,21 @@
 Gregs-Genesis-HTML5-Starter-Child
 =================================
 
-Author: <a href="http://www.gregreindel.com">Greg Reindel</a>
+Author: <a href="http://www.gregreindel.com">Dana Werpny</a>
 
-Current Version: 1.0
+Modified From: <a href="http://www.gregreindel.com">Greg Reindel</a>
 
-Requires: Wordpress 3.5+ and Genesis 2.0-beta
+Current Version: 2.0
 
-My HTML5 starter theme for Genesis Famework.
+Requires: Wordpress 3.5+, Genesis 2.0 and Gulp
 
-Updated: Based off the new Genesis 2.0-beta Sample Theme
+My modified HTML5 starter theme for Genesis Famework.
 
-Includes use the new Genesis html5 action & styles
+Updated: Based off the new Genesis 2.0 Sample Theme
 
-Please view <a href="http://www.gregreindel.com/genesis-html5-child-starter-theme/">My Genesis HTML5 Child Starter Theme</a> for more information
+Includes use of the new Genesis html5 action & styles
+
+Please view <a href="http://www.gregreindel.com/genesis-html5-child-starter-theme/">My Genesis HTML5 Child Starter Theme</a> for more information from the original author.
 
 Change Log:
 
