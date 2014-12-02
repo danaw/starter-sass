@@ -1,0 +1,21 @@
+ul#menu-primary-navigation {
+	text-align: center;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	border-width: 7px;
+	border-top-style: double;
+	border-bottom-style: double;
+	padding: 15px 0;
+	padding-left: 0;
+	li {
+		display: inline;
+		padding: 0 15px;
+		a:link, a:visited {
+			color: #444;
+			transition: 0.3s;
+		}
+		a:hover, a:active {
+			color: #FF6699;
+		}
+	}
+}
