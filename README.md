@@ -7,7 +7,7 @@ Modified From: <a href="http://www.gregreindel.com">Greg Reindel</a>
 
 Current Version: 2.0
 
-Requires: Wordpress 3.5+, Genesis 2.0 and Gulp
+Requires: Wordpress 3.5+, Genesis 2.0 and a task runner such as Gulp
 
 My modified HTML5 starter theme for Genesis Famework.
 
