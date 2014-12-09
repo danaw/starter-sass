@@ -1,0 +1,60 @@
+/*
+Home Widgets
+---------------------------------------------------------------------------------------------------- */
+
+#home-middle,
+#home-featured,
+home-bottom {
+	clear: both;
+	padding: 20px 0 16px;
+	padding: 1.25rem 0 1.6rem;
+}
+
+.home-middle-1,
+.home-middle-3 {
+	width: 350px;
+}
+
+.home-middle-2 {
+	width: 360px;
+}
+
+.home-middle-1 {
+	margin-right: 40px;
+}
+
+.home-middle-1,
+.home-middle-2 {
+	float: left;
+}
+
+.home-middle-3 {
+	float: right;
+}
+
+#home-middle a {
+	color: #999;
+	&:hover {
+		color: #ccc;
+	}
+}
+
+#home-middle .widget {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+#home-middle .widgettitle {
+	color: #999;
+}
+
+#home-middle li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+#home-middle .search-form {
+	width: 100%;
+}

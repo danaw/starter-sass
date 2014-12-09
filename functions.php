@@ -6,6 +6,24 @@ define( 'CHILD_THEME_URL', 'http://www.gregreindel.com' );
 // Activate the child theme
 add_action('genesis_setup','gregr_theme_setup', 15);
 
+/**
+ * HTML5 DOCTYPE
+ * removes the default Genesis doctype, adds new html5 doctype with IE8 detection
+*/
+
+function mb_html5_doctype() {
+?>
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="lt-ie9" <?php language_attributes( 'html' ); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html <?php language_attributes( 'html' ); ?>> <!--<![endif]-->
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<?php
+}
+
+remove_action( 'genesis_doctype', 'genesis_do_doctype' );
+add_action( 'genesis_doctype', 'mb_html5_doctype' );
+
 
 /***** THIS FIRES OFF ALL CHILD THEME SETUP - FUNCTIONS LOCATED IN /LIB/GREGR_CHILD_FUNCTIONS.PHP *****/
 function gregr_theme_setup() {
@@ -46,6 +64,11 @@ remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 // Remove WP version
 remove_action( 'wp_head', 'wp_generator' );
+//* Remove the header right widget area
+unregister_sidebar( 'header-right' );
+//* Reposition the primary navigation menu
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_before_header', 'genesis_do_nav', 12 );
 
 
 /***** OTHER <HEAD> ELEMENTS *****/
@@ -203,12 +226,35 @@ function prefix_enqueue_scripts() {
 
 }
 
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+    ?>
+    <p>&copy; <?php echo date("Y")?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></p>
+    <?php
+}
+
+/**
+ * Remove Genesis child theme style sheet
+ * @uses  genesis_meta  <genesis/lib/css/load-styles.php>
+*/
+remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
+
+/**
+ * Enqueue Genesis child theme style sheet at higher priority
+ * @uses wp_enqueue_scripts <http://codex.wordpress.org/Function_Reference/wp_enqueue_style>
+ */
+add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 15 );
+
 
 /***** OTHER *****/
 
 add_filter( 'http_request_args', 'gregr_prevent_theme_update', 5, 2 );
 
 //add_image_size( 'custom-thumb', 220, 180 );
+
+add_theme_support( 'genesis-connect-woocommerce' );
 
 // Below is the closing bracket of theme setup. It's kinda important.
 } // <-- DO NOT REMOVE THIS

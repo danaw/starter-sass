@@ -1,35 +1,26 @@
 {
   "name": "starter-sass",
   "version": "1.0.0",
-  "description": "Gregs-Genesis-HTML5-Starter-Child =================================",
+  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "autoprefixer": "^3.1.0",
-    "gulp-plumber": "^0.6.6",
-    "gulp-postcss": "^2.0.0",
-    "gulp": "^3.8.10",
-    "gulp-ruby-sass": "^0.7.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "testing"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/danaw/starter-sass.git"
   },
-  "keywords": [
-    "genesis",
-    "starter",
-    "theme",
-    "wordpress",
-    "sass",
-    "gulp"
-  ],
-  "author": "Dana Werpny",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danaw/starter-sass/issues"
   },
-  "homepage": "https://github.com/danaw/starter-sass"
+  "homepage": "https://github.com/danaw/starter-sass",
+  "devDependencies": {
+    "autoprefixer": "^3.1.0",
+    "gulp": "^3.8.10",
+    "gulp-plumber": "^0.6.6",
+    "gulp-postcss": "^2.0.0",
+    "gulp-ruby-sass": "^0.7.1"
+  }
 }

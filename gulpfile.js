@@ -9,7 +9,7 @@ gulp.task('sass', function() {
     .pipe(sass({ style: 'compressed' }))
     .pipe(plumber())
     .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('./'))
 });
 gulp.task('watch', function() {
 	gulp.watch('**/*.scss', ['sass'])

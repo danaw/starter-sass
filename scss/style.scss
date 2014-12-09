@@ -1,49 +1,61 @@
 /*
 Theme Name: Dana Werpny - Personal Portfolio
-Theme URI: http://danawerpny.com;
+Theme URI: http://danawerpny.com
 Description: The personal portfolio of Dana Werpny - a front-end developer from Toronto, Canada
 Version: 1.0
 Author: Dana
 Author URI: http://danawerpny.com
 */
 
-/* NORMALIZE */
-
-@import "_normalize.scss";
-
 /* TYPE STYLES */
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic);
 
-/* BASE STYLES */
+/* NORMALIZE & HTML 5 RESET */
+@import "_normalize.scss";
+@import "_reset.scss";
 
-@import "_base.scss";
+/* DEFAULTS */
+@import "_defaults.scss";
+@import "_common.scss";
 
-@import "_type.scss";
+/* GENESIS STYLES */
+@import "_genesis.scss";
+
+/* BASIC LAYOUT */
+@import "_layout.scss";
+
+/* HEADER */
+@import "_header.scss";
 
 /* NAV */
 @import "_nav.scss";
 
-/* FRONT PAGE STYLES */
+/* SIDEBAR */
+@import "_sidebar.scss";
 
-@import "_front.scss";
+/* WIDGETS */
+@import "_widgets.scss";
 
-/* SINGLE PORTFOLIO STYLES */
+/* PLUGINS */
+@import "_plugins.scss";
 
-@import "_portfolio.scss";
+/* FOOTER */
+@import "_footer.scss";
 
 /* SINGLE BLOG STYLE */
+@import "_post.scss";
 
-@import "_blog.scss";
+/* CONTACT PAGE & COMMENT FORMS STYLE */
+@import "_forms.scss";
 
-/* CONTACT PAGE STYLE */
+/* HOME PAGE DYNAMIC CONTENT */
+@import "_home.scss";
 
-@import "_contact.scss";
+/* WOOCOMMERCE */
+@import "_woocommerce.scss";
 
 /* CSS ANIMATIONS */
-
 @import "_animations.scss";
 
-/* HEADER */
-
-@import "_header.scss";
+/* MEDIA QUERIES */
+@import "_mq.scss";

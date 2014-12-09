@@ -1,0 +1,157 @@
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%; /* 10px browser default */
+}
+
+body {
+	background: #FFF;
+	color: #666;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.625;
+}
+
+a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+::-moz-selection {
+	background: #333;
+	color: #fff;
+}
+
+::selection {
+	background: #333;
+	color: #fff;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+}
+
+p {
+	margin: 0 0 24px;
+	margin: 0 0 2.4rem;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote,
+blockquote::before {
+	color: #999;
+}
+
+blockquote {
+	margin: 0;
+	padding: 24px 40px;
+	padding: 2.4rem 4rem;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	font-size: 3rem;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+cite {
+	font-style: normal;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0;
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+	padding: 0;
+}
+
+h1 {
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+.format-gallery #gallery-1 img {
+	border: none;
+}

@@ -1,0 +1,13 @@
+/*
+WooCommerce
+---------------------------------------------------------------------------------------------------- */
+.woocommerce #content input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt {
+	background: -webkit-linear-gradient(#FF7788,#FF6699);
+	border: 1px solid #FF7799;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+	color: #FFF;
+}
+
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+	text-transform: none;
+}
