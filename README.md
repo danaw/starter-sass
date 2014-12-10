@@ -26,6 +26,6 @@ This starter theme is possible do to the support of the web development communit
 <a href="http://ozzyrodriguez.com/tutorials/genesis/genesis-responsive-menu-2-0/">Ozzy Rodriguez</a>
 <a href="http://mattbanks.me/conditional-html-classes-genesis-2-0/">Matt Banks</a>
 <a href="http://www.carriedils.com/woocommerce-genesis-important-style/">Carrie Dills</a>
-<a href="http://briangardner.com/reposition-primary-navigation/">Bryan Gardner</a>
+<a href="http://briangardner.com/reposition-primary-navigation/">Brian Gardner</a>
 
 Initial Commit
