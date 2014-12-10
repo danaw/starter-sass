@@ -17,10 +17,9 @@ Content Area
 .entry-content a {
 	border-bottom: 1px solid #ddd;
 	color: #1d4eb0;
-}
-
-.entry-content a:hover {
-	color: #333;
+	&:hover {
+		color: #333;
+	}
 }
 
 .entry-content .attachment a,
@@ -61,11 +60,10 @@ Content Area
 	color: #999;
 	font-size: 14px;
 	font-size: 1.4rem;
-}
-
-.entry-meta a {
-	border-bottom: 1px solid #ddd;
-	font-weight: 700;
+	a {
+		border-bottom: 1px solid #ddd;
+	  font-weight: 700;
+	}
 }
 
 .entry-header .entry-meta {
@@ -108,17 +106,16 @@ Content Area
 
 .navigation li {
 	display: inline;
-}
-
-.navigation li a {
-	background: #333;
-	border-radius: 3px;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: 700;
-	padding: 8px 12px;
-	padding: 0.8rem 1.2rem;
+	a {
+		background: #333;
+	  border-radius: 3px;
+	  color: #fff;
+	  cursor: pointer;
+	  display: inline-block;
+	  font-weight: 700;
+	  padding: 8px 12px;
+	  padding: 0.8rem 1.2rem;
+	}
 }
 
 .navigation li a:hover,
