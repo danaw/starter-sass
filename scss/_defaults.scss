@@ -12,7 +12,7 @@ html {
 body {
 	background: #FFF;
 	color: #666;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: $font-primary;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.625;
@@ -97,7 +97,7 @@ h4,
 h5,
 h6 {
 	color: #333;
-	font-family: 'Lato', sans-serif;
+	font-family: $font-primary;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0;
