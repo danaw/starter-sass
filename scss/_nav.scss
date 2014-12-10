@@ -59,14 +59,18 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu a {
-	background: #fff;
-	border: 1px solid #eee;
-	border-top: none;
+	background: #FFF;
+	border-bottom: 1px solid $color-primary;
 	letter-spacing: 0;
 	padding: 16px 20px;
 	padding: 1.6rem 2rem;
 	position: relative;
 	width: 200px;
+}
+
+.genesis-nav-menu a,
+.genesis-nav-menu .sub-menu ul li a {
+	border-bottom: 1px solid #FFF;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -133,12 +137,12 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background: #333;
+	background: $color-primary;
 }
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
-	color: #fff;
+	color: #666;
 }
 
 .nav-primary .sub-menu a:hover {

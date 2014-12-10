@@ -15,8 +15,6 @@ Site Header
 --------------------------------------------- */
 
 .title-area {
-	font-family: 'Georgia', 'Serif';
-	font-weight: 700;
 	float: left;
 	padding: 0;
 	width: 360px;
@@ -26,9 +24,9 @@ Site Header
 
 .site-title {
 	font-size: 28px;
-	font-size: 2.8rem;
+	font-size: 3.8rem;
 	letter-spacing: 2px;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.3rem;
 	line-height: 1;
 	margin: 0 0 8px;
 	margin: 0 0 0.8rem;
@@ -48,8 +46,10 @@ Site Header
 
 .site-description {
 	color: #999;
+	font-family: $font-secondary;
 	font-size: 16px;
 	font-size: 1.6rem;
+	font-style: italic;
 	font-weight: 300;
 	line-height: 1;
 	margin: 0;

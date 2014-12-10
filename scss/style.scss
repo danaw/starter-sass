@@ -11,7 +11,7 @@ Template: Genesis
 /* ---------- START VARIABLES ---------- */
 
 /* COLORS - BASE */
-$color-primary: #FF6699;
+$color-primary: lavenderblush;
 $color-secondary: #21C6BB;
 
 /* COLORS - NEUTRALS */
@@ -22,6 +22,7 @@ $white: #FFF;
 
 /* FONTS */
 $font-primary: 'Raleway', 'Sans-serif';
+$font-secondary: 'Playfair Display', 'Cursive';
 
 /* ---------- END VARIABLES ---------- */
 
@@ -29,6 +30,8 @@ $font-primary: 'Raleway', 'Sans-serif';
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic);
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic);
 
 /* NORMALIZE & HTML 5 RESET */
 @import "_normalize.scss";
