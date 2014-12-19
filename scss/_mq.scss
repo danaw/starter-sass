@@ -75,9 +75,9 @@ Media Queries
 	}
 
 	.woocommerce #content div.product,.woocommerce div.product,.woocommerce-page #content div.product,.woocommerce-page div.product {
-	  margin-bottom:25px;
-	  position:relative;
-  }
+		margin-bottom:25px;
+		position:relative;
+	}
 
 	.archive-description,
 	.author-box,
@@ -128,11 +128,17 @@ Media Queries
 		padding: 2.4rem 0;
 	}
 
-	.footer-widgets,
+	.footer-widgets  {
+		padding: 30px 5% 20px 5%;
+		.widget-title {
+			margin-top: 25px;
+		}
+	}
+
 	#home-middle,
 	#home-featured,
-	#home-bottom  {
-		padding: 40px 5% 16px;
+	#home-bottom {
+		padding: 0 5% 0;
 	}
 
 	.footer-widgets-1,
@@ -142,11 +148,37 @@ Media Queries
 
 	.nav-primary {
 		a {
-		padding-top: 8px;
-	  }
+			padding-top: 8px;
+		}
 	}
 
 }
+
+/* iPhones (portrait and landscape)
+--------------------------------------------- */
+
+// @media only screen and (max-width: 961px) {
+// Featured Products
+
+// .woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li, .woocommerce-page ul.cart_list li, .woocommerce-page ul.product_list_widget li {
+// 	display: inline-block;
+// 	width: 400px;
+// 	height: 400px;
+// 	margin-right: 4%;
+// 	&:last-child {
+// 		margin-right: 0;
+// 	}
+// }
+
+// .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img {
+// 	float: none;
+// 	display: block;
+// 	width: 390px;
+// 	margin: 0;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// }
 
 /* iPhones (portrait and landscape)
 --------------------------------------------- */
@@ -184,6 +216,10 @@ nav {
 	clear: both;
 }
 
+.nav-primary {
+	position: static;
+}
+
 /* Navigation toggles
 --------------------------------------------- */
 
@@ -196,10 +232,19 @@ nav {
 	}
 }
 
+// @media only screen and (min-width: 914px) {
+// 	.nav-primary {
+// 		.fontawesome-text,
+// 		.fa {
+// 			display: none;
+// 		}
+// 	}
+// }
+
 /* Navigation toggles - Ensure Menu Displays when Scaled Up
 --------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 914px) {
 
 	nav {
 		display: block !important;
@@ -209,15 +254,19 @@ nav {
 /* Navigation toggles - Mobile (Change max width as you see fit)
 --------------------------------------------- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 913px) {
 
-.genesis-nav-menu .sub-menu a {
-	border-bottom: 1px solid $color-primary;
-}
+	.title-area {
+		margin-top: 0;
+	}
 
-.sub-menu ul li a {
-	border-bottom: 1px solid #FFF;
-}
+	.genesis-nav-menu .sub-menu a {
+		border-bottom: 1px solid $color-secondary;
+	}
+
+	.sub-menu ul li a {
+		border-bottom: 1px solid #FFF;
+	}
 
 	.menu-toggle,
 	.sub-menu-toggle {
@@ -279,7 +328,7 @@ nav {
 	}
 
 	.genesis-nav-menu .menu-item {
-		background-color: $color-primary;
+		background-color: $color-secondary;
 		display: block;
 		position: relative;
 		text-align: left;
@@ -308,7 +357,7 @@ nav {
 	}
 
 	.genesis-nav-menu .sub-menu .sub-menu a {
-		background-color: $color-primary;
+		background-color: $color-secondary;
 		padding-left: 30px;
 	}
 
@@ -319,7 +368,7 @@ nav {
 
 	.nav-primary a:hover,
 	.nav-primary .current-menu-item > a {
-		color: #FFF;
+		color: #666;
 	}
 
 }
