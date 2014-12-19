@@ -4,10 +4,11 @@ Home Widgets
 
 #home-middle,
 #home-featured,
-home-bottom {
+#home-bottom {
 	clear: both;
-	padding: 20px 0 16px;
-	padding: 1.25rem 0 1.6rem;
+	.widget-title {
+		margin-top: 50px;
+	}
 }
 
 .home-middle-1,
@@ -40,12 +41,12 @@ home-bottom {
 }
 
 #home-middle .widget {
-	margin-bottom: 24px;
-	margin-bottom: 2.4rem;
+	// margin-bottom: 24px;
+	// margin-bottom: 2.4rem;
 }
 
 #home-middle .widgettitle {
-	color: #999;
+	color: #666;
 }
 
 #home-middle li {
@@ -57,4 +58,23 @@ home-bottom {
 
 #home-middle .search-form {
 	width: 100%;
+}
+
+// Featured Products
+
+.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li, .woocommerce-page ul.cart_list li, .woocommerce-page ul.product_list_widget li {
+	float: left;
+	margin-right: 4%;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img {
+	float: none;
+	display: block;
+	width: 250px;
+	margin: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }

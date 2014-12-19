@@ -14,20 +14,20 @@ Plugins
 }
 
 .enews-widget input {
-	margin-bottom: 16px;
-	margin-bottom: 1.6rem;
+	margin: 16px 0;
+	margin: 1.6rem 0;
 }
 
 .enews-widget input[type="submit"] {
-	background: #1d4eb0;
-	color: #fff;
+	background: $color-primary;
+	color: #333;
+	transition: 0.5s;
 	margin: 0;
 	width: 100%;
-}
-
-.enews-widget input:hover[type="submit"] {
-	background: #fff;
-	color: #333;
+	&:hover {
+		background: lighten(#ff6699, 5%);
+		color: #F7F7F7;
+	}
 }
 
 /* Genesis Latest Tweets

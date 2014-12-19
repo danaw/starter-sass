@@ -94,13 +94,11 @@ Media Queries
 		background: none;
 	}
 
-	.genesis-nav-menu li,
 	.site-header ul.genesis-nav-menu,
 	.site-header .search-form {
 		float: none;
 	}
 
-	.genesis-nav-menu,
 	.site-description,
 	.site-header hgroup,
 	.site-header .search-form,
@@ -109,20 +107,9 @@ Media Queries
 		text-align: center;
 	}
 
-	.genesis-nav-menu a,
-	.genesis-nav-menu > .first > a,
-	.genesis-nav-menu > .last > a {
-		padding: 20px 16px;
-		padding: 2rem 1.6rem;
-	}
-
 	.site-header .search-form {
 		margin: 16px auto ;
 		margin: 1.6rem auto;
-	}
-
-	.genesis-nav-menu li.right {
-		display: none;
 	}
 
 	.entry-footer .entry-meta {
@@ -151,6 +138,12 @@ Media Queries
 	.footer-widgets-1,
 	.home-middle-1 {
 		margin: 0;
+	}
+
+	.nav-primary {
+		a {
+		padding-top: 8px;
+	  }
 	}
 
 }

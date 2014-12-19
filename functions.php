@@ -1,7 +1,7 @@
 <?php
 // Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Gregs HTML5 Starter' );
-define( 'CHILD_THEME_URL', 'http://www.gregreindel.com' );
+define( 'CHILD_THEME_NAME', 'Starter Sass by Dana Werpny' );
+define( 'CHILD_THEME_URL', 'http://www.danawerpny.com' );
 
 // Activate the child theme
 add_action('genesis_setup','gregr_theme_setup', 15);
@@ -140,8 +140,13 @@ add_theme_support( 'genesis-structural-wraps', array( 'header', 'nav', 'subnav',
 /***** FOOTER *****/
 
 // Footer creds
-add_filter('genesis_footer_creds_text', 'gregr_footer_creds_text');
-add_filter('genesis_footer_backtotop_text', 'gregr_footer_backtotop_text');
+// add_filter('genesis_footer_creds_text', 'gregr_footer_creds_text');
+// add_filter('genesis_footer_backtotop_text', 'gregr_footer_backtotop_text');
+
+function remove_footer_admin () {
+echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> and the <a href="http://my.studiopress.com/themes/genesis/" target="_blank">Genesis Framework</a> | Child Theme by <a href="http://www.danawerpny.com" target="_blank">Dana Werpny</a> | WordPress Tutorials: <a href="http://www.wpbeginner.com" target="_blank">WPBeginner</a></p>';
+}
+add_filter('admin_footer_text', 'remove_footer_admin');
 
 // Add support for footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
@@ -226,6 +231,12 @@ function prefix_enqueue_scripts() {
 
 }
 
+// Change column count for WooCommerce Thumbnails
+
+
+// Remove Sidebar from WooCommerce Pages
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 //* Customize the entire footer
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
@@ -246,7 +257,6 @@ remove_action( 'genesis_meta', 'genesis_load_stylesheet' );
  * @uses wp_enqueue_scripts <http://codex.wordpress.org/Function_Reference/wp_enqueue_style>
  */
 add_action( 'wp_enqueue_scripts', 'genesis_enqueue_main_stylesheet', 15 );
-
 
 /***** OTHER *****/
 

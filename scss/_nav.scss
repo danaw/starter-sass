@@ -131,19 +131,34 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background: #333;
+	position: fixed;
+	width: 100%;
+	background: lavenderblush;
 	text-align: center;
+	z-index: 999;
 	a {
 		font-size: 12px;
 		line-height: 1.8em;
+		padding-top: 8px;
+		transition: 0.5s;
+		&:hover {
+			color: #666;
+		}
+	}
+	.fa {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    transition: 0.2s;
+    &:hover,
+    &:active {
+    	color: #888;
+    }
 	}
 }
 
 .nav-primary a:hover,
-.nav-primary .current-menu-item > a {
-	color: #fff;
-}
-
+.nav-primary .current-menu-item > a,
 .nav-primary .sub-menu a:hover {
 	color: #333;
 }
@@ -154,3 +169,11 @@ Site Navigation
 .nav-secondary {
 	text-align: center;
 }
+
+/* Font Awesome Social Media Icons in Header
+--------------------------------------------- */
+
+.fontawesome-text {
+	display: none;
+}
+

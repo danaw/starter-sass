@@ -1,7 +1,7 @@
 /* Site Footer */
 
 .site-footer {
-	color: #999;
+	color: $grey-med;
 	font-size: 14px;
 	font-size: 1.4rem;
 	padding: 40px 0;
@@ -11,5 +11,23 @@
 		margin: 0;
 	}
 	a {
+	}
+}
+
+.footer-widgets {
+	background: #333;
+	padding-bottom: 0;
+	padding: 50px 0 25px 0;
+	p, a {
+		font-size: 16px;
+	}
+	a {
+		color: #FF6699;
+	}
+	.widget-wrap {
+		ul li {
+			border-bottom: 2px dotted $grey-med;
+			padding: 10px 0;
+		}
 	}
 }
