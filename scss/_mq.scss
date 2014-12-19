@@ -216,10 +216,6 @@ nav {
 	clear: both;
 }
 
-.nav-primary {
-	position: static;
-}
-
 /* Navigation toggles
 --------------------------------------------- */
 
@@ -255,6 +251,10 @@ nav {
 --------------------------------------------- */
 
 @media only screen and (max-width: 913px) {
+
+.nav-primary {
+	position: static;
+}
 
 	.title-area {
 		margin-top: 0;

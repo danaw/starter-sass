@@ -64,10 +64,10 @@ Home Widgets
 
 .woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li, .woocommerce-page ul.cart_list li, .woocommerce-page ul.product_list_widget li {
 	display: inline-block;
-	margin-right: 4%;
-	&:last-child {
-		margin-right: 0;
-	}
+	margin: 0 1.53%;
+	// &:last-child {
+	// 	margin-right: 0;
+	// }
 }
 
 .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img {
