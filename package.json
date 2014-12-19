@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danaw/starter-sass.git"
+    "url": "https://github.com/danaw/stationery.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danaw/starter-sass/issues"
+    "url": "https://github.com/danaw/stationery/issues"
   },
-  "homepage": "https://github.com/danaw/starter-sass",
+  "homepage": "https://github.com/danaw/stationery",
   "devDependencies": {
     "autoprefixer": "^3.1.0",
     "gulp": "^3.8.10",
